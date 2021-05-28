@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#testimonials {
+  width: 100%;
+  height: fit-content;
+  background: #252b42;
+  text-align: center;
+  padding: 5.625vw 0;
+}
+#testimonials_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.875vw;
+  letter-spacing: 0.002px;
+  color: #ffffff;
+}
+#testimonials_container_middle {
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 6.25vw;
+}
+#testi_logo img {
+  width: 14.3125vw;
+  height: 2.875vw;
+}
+#testi_desc {
+  width: 42.6875vw;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 1.25vw;
+  letter-spacing: 0.0025vw;
+  color: #ffffff;
+  margin-top: 3.125vw;
+}
+#testi_clint {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top: 3.125vw;
+  justify-content: center;
+  align-items: center;
+}
+#testi_clint_img {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+}
+#testi_clint_img img {
+  width: 3.125vw;
+  height: 3.125vw;
+  margin: 0;
+}
+#testi_clint_matter {
+  margin-left: 0.9375vw;
+  text-align: left;
+  width: fit-content;
+  height: fit-content;
+}
+#testi_clint_name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75vw;
+  line-height: 1.125vw;
+  letter-spacing: 0.0015vw;
+  color: #ffffff;
+  margin: 0;
+}
+#testi_clint_designation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9375vw;
+  letter-spacing: 0.0025vw;
+  color: #ffffff;
+}
+#testimonials_container_bottom {
+  margin-top: 5vw;
+}
+#testimonials_container_bottom button {
+  width: 17.5vw;
+  height: 4.0625vw;
+  background: #38a3f1;
+  border-radius: 2.1875vw;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.375vw;
+  color: #ffffff;
+}
+@media (max-width: 650px) {
+  #testimonials {
+    padding: 20vw 0;
+  }
+  #testimonials_title {
+    font-size: 11vw;
+  }
+  #testi_logo img {
+    width: 55vw;
+    height: 11vw;
+    margin-top: 10vw;
+  }
+  #testi_desc {
+    font-size: 4vw;
+    line-height: unset;
+    color: #ffffff;
+    margin-top: 8vw;
+    width: 80vw;
+  }
+  #testi_clint_name {
+    font-size: 3vw;
+    line-height: unset;
+  }
+  #testi_clint_designation {
+    font-size: 4vw;
+  }
+  #testi_clint_img img {
+    width: 12vw;
+    height: 12vw;
+    margin: 0;
+  }
+  #testi_clint_img {
+    display: flex;
+  }
+  #testi_clint_matter {
+    margin-left: 3vw;
+  }
+  #testi_clint {
+    margin-top: 10vw;
+  }
+  #testimonials_container_bottom button {
+    width: 75vw;
+    height: 14vw;
+    border-radius: 15vw;
+    font-size: 4.5vw;
+    margin-top: 15vw;
+  }
+}

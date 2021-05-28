@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#patner {
+  width: 100%;
+  height: fit-content;
+  background: #252b42;
+  padding: 6.25vw 0;
+}
+#patner_container_top {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  text-align: center;
+}
+#patners_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.875vw;
+  line-height: 3.5625vw;
+  letter-spacing: 0.002vw;
+  color: #ffffff;
+}
+#patners_desc {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 1.25vw;
+  text-align: center;
+  letter-spacing: 0.002vw;
+  color: #ffffff;
+  width: 18.625vw;
+  margin-top: 1.25vw;
+}
+/*======================cards====================*/
+#patner_container_bottom {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 51.125vw;
+  margin: auto;
+  gap: 4.375vw;
+  margin-top: 4.375vw;
+}
+#patner_container_card {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#patner_container_card:nth-child(2) img {
+  width: 6.1875vw;
+  height: 7.25vw;
+}
+#patner_container_card:nth-child(3) img {
+  width: 6.625vw;
+  height: 5.5vw;
+}
+#patner_container_card:nth-child(4) img {
+  width: 6.625vw;
+  height: 5.5vw;
+}
+#patner_container_card:nth-child(5) img {
+  width: 5.1875vw;
+  height: 5.5625vw;
+}
+#patner_container_card:nth-child(6) img {
+  width: 5.4375vw;
+  height: 5.4375vw;
+}
+#patner_container_card_b1 p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75vw;
+  color: #ffffff;
+}
+#patner_container_card_b2_container {
+  width: fit-content;
+  height: fit-content;
+}
+#patner_container_card_b2 {
+  margin-top: 0.9vw;
+}
+#patner_container_card_b2 img {
+  width: 7.625vw;
+  height: 7.6875vw;
+}
+#patner_container_card_b3 {
+  margin-top: 0.9vw;
+}
+#patner_container_card_b3 p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125vw;
+  line-height: 1.6875vw;
+  letter-spacing: 0.0025px;
+  color: #ffffff;
+  width: 13.6vw;
+}
+#patner_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vw;
+}
+#patner_btn button {
+  background: #38a3f1;
+  border-radius: 2.1875vw;
+  width: 14.75vw;
+  height: 4.0625vw;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.375vw;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@media (max-width: 650px) {
+  #patner {
+    padding: 20vw 0;
+  }
+  #patners_title {
+    font-size: 12.5vw;
+    line-height: unset;
+  }
+  #patners_desc {
+    font-size: 4vw;
+    line-height: unset;
+    width: 80vw;
+    margin: auto;
+    margin-top: 1.25vw;
+  }
+  #patner_container_bottom {
+    display: grid;
+    grid-template-columns: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 30vw;
+    gap: 30vw;
+  }
+  #patner_container_card_b1 p {
+    font-size: 4vw;
+  }
+  #patner_container_card_b2 img {
+    width: 35vw;
+    height: 38vw;
+    margin-top: 8vw;
+  }
+  #patner_container_card_b3 p {
+    font-size: 4.5vw;
+    line-height: unset;
+    width: 68vw;
+    margin-top: 5vw;
+  }
+  #patner_container_card:nth-child(2) img {
+    width: 35vw;
+    height: 40vw;
+  }
+  #patner_container_card:nth-child(3) img {
+    width: 35vw;
+    height: 35vw;
+  }
+  #patner_container_card:nth-child(4) img {
+    width: 35vw;
+    height: 35vw;
+  }
+  #patner_container_card:nth-child(5) img {
+    width: 35vw;
+    height: 37vw;
+  }
+  #patner_container_card:nth-child(6) img {
+    width: 35vw;
+    height: 35vw;
+  }
+  #patner_btn button {
+    border-radius: 30vw;
+    width: 70vw;
+    height: 18vw;
+    font-size: 6vw;
+    margin-top: 20vw;
+  }
+}

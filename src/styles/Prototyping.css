@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#prototyping {
+  width: 100%;
+  height: fit-content;
+  background: #252b42;
+  padding: 5vw 0;
+}
+#prototyping_container_top {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+}
+#proto_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.875vw;
+  line-height: 3.5625vw;
+  letter-spacing: 0.0125vw;
+  color: #ffffff;
+  width: 19.75vw;
+}
+#proto_desc {
+  width: 18.625vw;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 1.15vw;
+  letter-spacing: 0.0125vw;
+  color: #ffffff;
+  margin-top: 1.15vw;
+}
+#proto_btn {
+  background: #38a3f1;
+  border-radius: 2.1875vw;
+  width: 14.75vw;
+  height: 4.0625vw;
+  border: none;
+  outline: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.375vw;
+  letter-spacing: 0.00625vw;
+  color: #ffffff;
+  margin-top: 5vw;
+}
+#prototyping_container_bottom {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top: 5vw;
+}
+#prototyping_container_bottom img {
+  width: 66.813125vw;
+  height: 38.343125vw;
+}
+@media (max-width: 650px) {
+  #prototyping {
+    padding: 30vw 0;
+  }
+  #proto_title {
+    font-size: 8vw;
+    line-height: 10vw;
+    width: 50vw;
+    margin: auto;
+  }
+  #proto_desc {
+    width: 80vw;
+    font-size: 4vw;
+    line-height: unset;
+    margin: auto;
+    margin-top: 5vw;
+  }
+  #proto_btn {
+    border-radius: 8vw;
+    width: 58vw;
+    height: 15vw;
+    font-size: 4vw;
+    margin-top: 15vw;
+  }
+  #prototyping_container_bottom img {
+    width: 100vw;
+    height: 64vw;
+    margin-top: 5vw;
+  }
+}

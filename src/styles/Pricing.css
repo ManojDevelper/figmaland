@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#pricing {
+  width: 100%;
+  height: fit-content;
+  background: #252b42;
+  padding: 6.25vw 0;
+}
+#pricing_container_top {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  margin: auto;
+}
+#pricing_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.875vw;
+  line-height: 3.5625vw;
+  letter-spacing: 0.0125vw;
+  color: #ffffff;
+}
+#pricing_desc {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 1.25vw;
+  letter-spacing: 0.0025vw;
+  color: #ffffff;
+  width: 18.625vw;
+  text-align: center;
+  margin-top: 1.25vw;
+}
+/*=================cards====================*/
+#pricing_container_bottom {
+  width: 69.0625vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+  gap: 2.5vw;
+  margin-top: 6.25vw;
+}
+#pricing_card {
+  background: white;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  box-shadow: 0.5px 0.8125vw 1.1875vw rgba(0, 0, 0, 0.07);
+  border-radius: 0.625vw;
+  padding: 2.5vw;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#pricing_card_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.375vw;
+  color: #252b42;
+}
+#pricing_card_desc {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75vw;
+  color: #374754;
+}
+#pricing_card_bottom {
+  margin-top: 1.875vw;
+  width: 100%;
+}
+#pricing_card_bottom_prize_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+#prize_matter {
+  margin-left: 0.625vw;
+  width: fit-content;
+  height: fit-content;
+}
+#prizenumber {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.4375vw;
+  color: #252b42;
+}
+#price_symbol {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.375vw;
+  color: #252b42;
+  margin: 0;
+}
+#prize_per_month {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75vw;
+  color: #374754;
+  margin: 0;
+}
+#pricing_card_bottom_prize_button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.875vw;
+}
+#pricing_card_bottom_prize_button button {
+  width: 15.9375vw;
+  height: 3.25vw;
+  background: #38a3f1;
+  border-radius: 2.1875vw;
+  border: none;
+  outline: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1vw;
+  color: #ffffff;
+  cursor: pointer;
+}
+/*=================cardsHover====================*/
+#pricing_card:hover {
+  background: linear-gradient(39.97deg, #ef2779 0.79%, #7834be 79.29%);
+  cursor: pointer;
+}
+#pricing_card:hover p {
+  color: white;
+}
+#pricing_card:hover button {
+  background: white;
+  color: #ef2779;
+}
+@media (max-width: 650px) {
+  #pricing {
+    padding: 20vw 0;
+  }
+  #pricing_title {
+    font-size: 10vw;
+    letter-spacing: 0.0125vw;
+  }
+  #pricing_desc {
+    font-size: 4vw;
+    line-height: unset;
+    width: 80vw;
+    margin-top: 9vw;
+  }
+  #pricing_container_bottom {
+    width: 88%;
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    gap: 10vw;
+    margin-top: 20vw;
+  }
+  #pricing_card_title {
+    font-size: 5vw;
+  }
+  #pricing_card_desc {
+    font-size: 4vw;
+    margin-top: 5vw;
+  }
+  #prizenumber_container {
+    display: flex;
+  }
+  #prizenumber {
+    font-size: 15vw;
+  }
+  #pricing_card_bottom_prize_block {
+    display: flex;
+    margin-top: 10vw;
+  }
+  #price_symbol {
+    font-size: 5vw;
+    height: fit-content;
+    display: flex;
+  }
+  #prize_per_month {
+    font-size: 3vw;
+  }
+  #prize_matter {
+    margin-left: 3vw;
+  }
+  #pricing_card_bottom_prize_button button {
+    width: 100%;
+    height: 12vw;
+    background: #38a3f1;
+    border-radius: 30vw;
+    font-weight: 500;
+    font-size: 1vw;
+    margin-top: 10vw;
+    font-size: 5vw;
+  }
+  #pricing_card_bottom {
+    margin: auto;
+    margin-top: 1.875vw;
+    width: 90%;
+  }
+  #pricing_card {
+    border-radius: 3vw;
+    padding: 9vw 5vw;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+}

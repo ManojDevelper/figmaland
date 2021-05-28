@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+#banner {
+  width: 100%;
+  height: 59.3125vw;
+  background-image: url("../data/assets/bannerbackground.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#banner_container_main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#banner_container {
+  width: fit-content;
+  height: fit-content;
+  margin: auto 20vw 17vw auto;
+}
+#banner_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.4375vw;
+  line-height: 4.0625vw;
+  letter-spacing: 0.0125vw;
+  color: #ffffff;
+  width: 20.0625vw;
+}
+#banner_desc {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 1.25vw;
+  letter-spacing: 0.0125vw;
+  color: #ffffff;
+  width: 18.625vw;
+  margin-top: 1.875vw;
+}
+#banner_button {
+  width: 14.75vw;
+  height: 4.0625vw;
+  border-radius: 2.1875vw;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.375vw;
+  line-height: 2.0625vw;
+  letter-spacing: 0.00625vw;
+  color: #38a3f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5vw;
+}
+@media (max-width: 650px) {
+  #banner {
+    background-image: url("../data/assets/bannermobilebackground.png");
+    height:fit-content;
+  }
+  #banner_container_main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  #banner_container {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #banner_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13vw;
+    line-height: 13vw;
+    text-align: center;
+    letter-spacing: 0.0125vw;
+    color: #ffffff;
+    width: 90vw;
+    margin-top: 35vw;
+  }
+  #banner_desc {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.5vw;
+    line-height: unset;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    width: 90vw;
+    margin-top: 6vw;
+    margin-bottom: 80vw;
+  }
+  #banner_button {
+    width: 43vw;
+    height: 13vw;
+    border-radius: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5vw;
+    letter-spacing: 0.00625vw;
+    color: #38a3f1;
+    margin-bottom: 20vw;
+  }
+}
