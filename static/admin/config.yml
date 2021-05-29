@@ -1,18 +1,286 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: main
 
 publish_mode: editorial_workflow
 
-media_folder: 'assets'
-public_folder: '/'
+media_folder: "src/data/assets"
+public_folder: "src/pages"
 
 collections:
-  - label: Home
-    name: home
+  - label: "Title-Heading-Description"
+    name: "pages"
+    folder: "src/data"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Heading", name: "headding", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+
+  - label: "Markdown"
+    name: "markdown"
     files:
-      - label: Home
-        name: home
-        file: 'home.md'
+      - file: "src/data/banner.md"
+        label: "Banner"
+        name: "banner"
         fields:
-          - { label: Title, name: title }
-          - { label: Description, name: description }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              default: "Banner",
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              default: "We focus on ergonomics",
+            }
+          - {
+              label: "Description2",
+              name: "description2",
+              widget: "string",
+              default: "Most calendars are designed for teams. Slate is designed for freelancers",
+            }
+          - {
+              label: "Button",
+              name: "button",
+              widget: "string",
+              default: "Try For Free",
+            }
+      - file: "src/data/features.md"
+        label: "Features"
+        name: "features"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              default: "Features",
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              default: "At your fingertips",
+            }
+          - {
+              label: "Description2",
+              name: "description2",
+              widget: "string",
+              default: "Most calendars are designed for teams. Slate is designed for freelancers",
+            }
+          - {
+              label: "Features",
+              name: "features",
+              widget: "list",
+              fields:
+                [
+                  { label: "ID", name: "id", widget: "number" },
+                  { label: "Title", name: "title", widget: "string" },
+                  {
+                    label: "Description",
+                    name: "description",
+                    widget: "string",
+                  },
+                  { label: "Image", name: "icon", widget: "image" },
+                ],
+            }
+      - file: "src/data/prototyping.md"
+        label: "Prototyping"
+        name: "prototyping"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              default: "Lightning fast prototyping",
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              default: "Most calendars are designed for teams. Slate is designed for freelancers",
+            }
+          - {
+              label: "Button",
+              name: "button",
+              widget: "string",
+              default: "Try For Free",
+            }
+          - { labe;: "Image", name: "img", widget: "image" }
+      - file: "src/data/subscribe.md"
+        label: "Subscribe"
+        name: "subscribe"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              default: "At your fingertips",
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              default: "Lightning fast prototyping",
+            }
+          - {
+              label: "Description2",
+              name: "description2",
+              widget: "string",
+              default: "Newsletter",
+            }
+          - {
+              label: "Description3",
+              name: "description3",
+              widget: "string",
+              default: "Subscribe to our Newsletter",
+            }
+          - {
+              label: "Description4",
+              name: "description4",
+              widget: "string",
+              default: "Available exclusivery on Figmaland",
+            }
+          - {
+              label: "Button",
+              name: "button",
+              widget: "string",
+              default: "Subscribe",
+            }
+      - file: "src/data/pricing.md"
+        label: "Patners"
+        name: "patners"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              default: "Partners",
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              default: "Most calendars are designed for teams. Slate is designed for freelancers",
+            }
+          - {
+              label: "patners",
+              name: "patners",
+              widget: "list",
+              fields:
+                [
+                  { label: "ID", name: "id", widget: "number" },
+                  { label: "Title", name: "title", widget: "string" },
+                  {
+                    label: "Description",
+                    name: "description",
+                    widget: "string",
+                  },
+                  { label: "Image", name: "img", widget: "image" },
+                ],
+            }
+      - file: "src/data/testimonials.md"
+        label: "Testimonials"
+        name: "testimonials"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              default: "Testimonials",
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              default: "Most calendars are designed for teams. Slate is designed for freelancers",
+            }
+          - {
+              label: "Description2",
+              name: "description2",
+              widget: "string",
+              default: "Organize across",
+            }
+          - {
+              label: "Designation",
+              name: "designation",
+              widget: "string",
+              default: "Ui designer",
+            }
+          - {
+              label: "Button",
+              name: "button",
+              widget: "string",
+              default: "More Testimonials",
+            }
+          - { labe;: "Image", name: "img", widget: "image" }
+          - { labe;: "ProfileImg", name: "logo1", widget: "image" }
+      - file: "src/data/pricing.md"
+        label: "Pricing"
+        name: "pricing"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              default: "Pricing",
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              default: "Most calendars are designed for teams. Slate is designed for freelancers",
+            }
+          - {
+              label: "Pricing",
+              name: "pricing",
+              widget: "list",
+              fields:
+                [
+                  { label: "ID", name: "id", widget: "number" },
+                  { label: "Title", name: "title", widget: "string" },
+                  {
+                    label: "Description",
+                    name: "description",
+                    widget: "string",
+                  },
+                  { label: "Prize", name: "prize", widget: "string" },
+                  { label: "Button", name: "button", widget: "string" },
+                ],
+            }
+      - file: "src/data/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              default: "Contact Us",
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              default: "Most calendars are designed for teams. Slate is designed for freelancers",
+            }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Mail", name: "mail", widget: "string" }
+      - file: "src/data/footer.md"
+        label: "Footer"
+        name: "footer"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Pricing",
+              name: "pricing",
+              widget: "list",
+              fields:
+                [
+                  { label: "ID", name: "id", widget: "number" },
+                  { label: "Pages", name: "pages", widget: "string" },
+                ],
+            }

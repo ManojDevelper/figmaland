@@ -24,21 +24,21 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 3.4375vw;
+  font-size: 3.8vw;
   line-height: 4.0625vw;
   letter-spacing: 0.0125vw;
   color: #ffffff;
-  width: 20.0625vw;
+  width: 22vw;
 }
 #banner_desc {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 1.1vw;
   line-height: 1.25vw;
   letter-spacing: 0.0125vw;
   color: #ffffff;
-  width: 18.625vw;
+  width: 21.2vw;
   margin-top: 1.875vw;
 }
 #banner_button {
@@ -56,11 +56,17 @@
   outline: none;
   cursor: pointer;
   margin-top: 5vw;
+  transition: 0.7s ease-in-out;
+}
+#banner_button:hover {
+  background: #38a3f1;
+  color: white;
+  width: 16vw;
 }
 @media (max-width: 650px) {
   #banner {
     background-image: url("../data/assets/bannermobilebackground.png");
-    height:fit-content;
+    height: fit-content;
   }
   #banner_container_main {
     width: 100%;
@@ -111,5 +117,9 @@
     letter-spacing: 0.00625vw;
     color: #38a3f1;
     margin-bottom: 20vw;
+  }
+  #banner_button:hover {
+    width: 46vw;
+    padding-right: 2vw;
   }
 }

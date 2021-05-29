@@ -6,14 +6,30 @@ import img3 from "../data/assets/linkdin.svg";
 import img4 from "../data/assets/location.svg";
 import img5 from "../data/assets/phone.svg";
 import img6 from "../data/assets/mail.svg";
+import { graphql, useStaticQuery } from "gatsby";
 
 function Contact(){
+    const data = useStaticQuery(graphql`
+    query {
+      contact: file(relativePath: {eq: "contact.md"}) {
+          childMarkdownRemark {
+            frontmatter {
+              title
+              description
+              address
+              phone
+              mail
+            }
+          }
+        } 
+       }
+  `)
     return(
         <>
         <div id="contact">
             <div id="contact_container">
-                <p id="contact_title">Contact Us</p>
-                <p id="contact_desc">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                <p id="contact_title">{data.contact.childMarkdownRemark.frontmatter.title}</p>
+                <p id="contact_desc">{data.contact.childMarkdownRemark.frontmatter.description}</p>
                 <div id="contact_container_block">
                     <div id="contact_container_block1">
                         <h1 id="contact_block_title">Contact Us</h1>
@@ -34,7 +50,7 @@ function Contact(){
                     </div>
                     <div id="contact_container_block_side_blocks_matter">
                     <div>
-                    <p id="contact_address">6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
+                    <p id="contact_address">{data.contact.childMarkdownRemark.frontmatter.address}</p>
                     </div>
                     </div>
                 </div>
@@ -44,7 +60,7 @@ function Contact(){
                     </div>
                     <div id="contact_container_block_side_blocks_matter">
                     <div>
-                    <p id="contact_number">(843) 555-0130</p>
+                    <p id="contact_number">{data.contact.childMarkdownRemark.frontmatter.phone}</p>
                     </div>
                     </div>
                 </div>
@@ -54,7 +70,7 @@ function Contact(){
                     </div>
                     <div id="contact_container_block_side_blocks_matter">
                     <div>
-                    <p id="contact_mail">willie.jennings@example.com</p>
+                    <p id="contact_mail">{data.contact.childMarkdownRemark.frontmatter.mail}</p>
                     </div>
                     </div>
                 </div>

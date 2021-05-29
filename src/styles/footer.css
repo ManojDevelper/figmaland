@@ -87,6 +87,16 @@
     margin-top: 10vw;
   }
   #footer_container_block3 #contact_container_block_side_icons {
-    display: none;
+    display: flex;
+  }
+  #footer_container_block3 #contact_icon {
+    margin-left: 4vw;
+  }
+  #footer_container_block3 #contact_icon:first-child {
+    margin-left: unset;
+  }
+  #footer_container_block3 #contact_icon img {
+    width: 5vw;
+    height: 5vw;
   }
 }

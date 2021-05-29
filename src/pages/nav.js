@@ -58,11 +58,11 @@ function Navbars() {
             </div>
           </Navbar.Toggle>
           <Nav navbarScroll id="nav">
-            <p id="nav_links"><Nav.Link href="#banner" id="nav_main_link">Home</Nav.Link></p>
-            <p id="nav_links"><Nav.Link href="#features" id="nav_main_link">Product</Nav.Link></p>
-            <p id="nav_links"><Nav.Link href="#patner" id="nav_main_link">Pricing</Nav.Link></p>
-            <p id="nav_links"><Nav.Link href="#testimonials" id="nav_main_link">About</Nav.Link></p>
-            <p id="nav_links"><Nav.Link href="#contact" id="nav_main_link">Contact</Nav.Link></p>
+            <p id="nav_links"><Nav.Link href="#banner" id="nav_main_link" activeclassName='active'>Home</Nav.Link></p>
+            <p id="nav_links"><Nav.Link href="#features" id="nav_main_link" activeclassName='active'>Product</Nav.Link></p>
+            <p id="nav_links"><Nav.Link href="#pricing" id="nav_main_link" activeclassName='active'>Pricing</Nav.Link></p>
+            <p id="nav_links"><Nav.Link href="#testimonials" id="nav_main_link" activeclassName='active'>About</Nav.Link></p>
+            <p id="nav_links"><Nav.Link href="#contact" id="nav_main_link" activeclassName='active'>Contact</Nav.Link></p>
             <div id="search">
               <div id="search_input">
                 <input type="text" placeholder="Your Email" />

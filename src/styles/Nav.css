@@ -9,18 +9,25 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 #nav_container2 {
   background: transparent;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 #search {
   display: flex;
 }
 #nav {
   margin-left: auto;
+}
+#nav #nav_links .active{
+  color: violet;
+  font-weight: bold;
+  transition: 0.5s ease;
 }
 #nav_logo {
   z-index: 10;
@@ -85,6 +92,11 @@
   border: none;
   outline: none;
   cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+#search_button button:hover {
+  background: violet;
+  color: white;
 }
 @media (max-width: 1200px) {
   #navbarResponsive {
@@ -164,15 +176,17 @@
 #nav_logo {
   margin-left: 0;
 }
-#navbarResponsive .toggle img {
-  margin-right: 20px;
-}
 #nav_logo img {
   width: 120px;
   height: 58px;
 }
-#navbarResponsive .toggle img {
+.toggle img{
   width: 18px;
-  height: 18px;
+  height:18px;
+}
+#navbarResponsive .toggle img {
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
 }
 }
