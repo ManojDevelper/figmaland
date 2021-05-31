@@ -34,7 +34,7 @@ function Subscribe(){
                     <p id="subscribe_container_bottom_desc">{data.subscribe.childMarkdownRemark.frontmatter.description4}</p>
                     <div id="subscribe_inputs">
                         <input type="text" placeholder="Your Email"/>
-                        <button id="subscribe_btn">{data.subscribe.childMarkdownRemark.frontmatter.title}</button>
+                        <button id="subscribe_btn">{data.subscribe.childMarkdownRemark.frontmatter.button}</button>
                     </div>
                 </div>
             </div>
