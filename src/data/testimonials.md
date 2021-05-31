@@ -5,6 +5,6 @@ description: Most calendars are designed for teams. Slate is designed for
 description2: Organize across
 designation: Ui designer
 button: More Testimonials
-img: src/pages/testi_logo.png
+img: ./assets/testi_logo.png
 logo1: ./assets/testi_clint.png
 ---
