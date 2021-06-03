@@ -6,7 +6,7 @@
   width: 100%;
   height: fit-content;
   background: #252b42;
-  padding: 6.25vw 0;
+  padding: 8.575vw 0;
 }
 #pricing_container_top {
   width: fit-content;
@@ -37,11 +37,11 @@
 }
 /*=================cards====================*/
 #pricing_container_bottom {
-  width: 69.0625vw;
+  width: 78vw;
   display: grid;
   grid-template-columns: auto auto auto;
   margin: auto;
-  gap: 2.5vw;
+  gap: 3.25vw;
   margin-top: 6.25vw;
 }
 #pricing_card {
@@ -50,7 +50,7 @@
   box-sizing: border-box;
   box-shadow: 0.5px 0.8125vw 1.1875vw rgba(0, 0, 0, 0.07);
   border-radius: 0.625vw;
-  padding: 2.5vw;
+  padding: 2.8125vw 2.625vw;
   transition: 0.5s ease;
   cursor: pointer;
 }
@@ -65,11 +65,11 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 0.75vw;
+  font-size: 0.875vw;
   color: #374754;
 }
 #pricing_card_bottom {
-  margin-top: 1.875vw;
+  margin-top: 3.2vw;
   width: 100%;
 }
 #pricing_card_bottom_prize_block {
@@ -88,14 +88,14 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 3.4375vw;
+  font-size: 3.5625vw;
   color: #252b42;
 }
 #price_symbol {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.375vw;
+  font-size: 1.5vw;
   color: #252b42;
   margin: 0;
 }
@@ -103,7 +103,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 0.75vw;
+  font-size: 0.875vw;
   color: #374754;
   margin: 0;
 }
@@ -112,11 +112,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.875vw;
+  margin-top: 3.2vw;
 }
 #pricing_card_bottom_prize_button button {
-  width: 15.9375vw;
-  height: 3.25vw;
+  width: 100%;
+  height: 3.375vw;
   background: #38a3f1;
   border-radius: 2.1875vw;
   border: none;

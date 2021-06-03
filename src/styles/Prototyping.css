@@ -6,7 +6,7 @@
   width: 100%;
   height: fit-content;
   background: #252b42;
-  padding: 5vw 0;
+  padding: 10vw 0;
 }
 #prototyping_container_top {
   text-align: center;
@@ -18,7 +18,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 2.875vw;
+  font-size: 3vw;
   line-height: 3.5625vw;
   letter-spacing: 0.0125vw;
   color: #ffffff;
@@ -33,7 +33,7 @@
   line-height: 1.15vw;
   letter-spacing: 0.0125vw;
   color: #ffffff;
-  margin-top: 1.15vw;
+  margin-top: 2vw;
 }
 #proto_btn {
   background: #38a3f1;

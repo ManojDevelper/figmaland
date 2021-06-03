@@ -27,21 +27,22 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 2.875vw;
+  font-size: 3vw;
   line-height: 3.5625vw;
   letter-spacing: 0.0125vw;
   color: #ffffff;
   margin-top: 1.25vw;
 }
 #feature_description {
-  width: 19.875vw;
+  width: 18.625vw;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 1vw;
-  letter-spacing: 0.00125vw;
+  line-height: 1.15vw;
+  letter-spacing: 0.0125vw;
   color: #ffffff;
-  margin-top: 1.25vw;
+  margin-top: 2vw;
 }
 /*=============boxes================*/
 #features_bottom {
@@ -56,7 +57,7 @@
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 3.75vw;
+  gap: 5vw;
 }
 #features_bottom_box_top {
   display: flex;
@@ -68,8 +69,8 @@
   align-items: center;
 }
 #features_bottom_box_top_logo img {
-  width: 2.6875vw;
-  height: 2.71875vw;
+  width: 2.9vw;
+  height: 2.9vw;
 }
 #features_bottom_box_top_matter {
   width: fit-content;
@@ -80,10 +81,10 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.375vw;
+  font-size: 1.5vw;
   letter-spacing: 0.00625vw;
   color: #ffffff;
-  width: 11.6875vw;
+  width: 13vw;
   line-height: 2.0625vw;
 }
 #features_bottom_box_bottom {
